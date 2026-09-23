@@ -109,7 +109,7 @@ class _BaseClient:
         h = {
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "User-Agent": "bee-sdk/1.0.11",
+            "User-Agent": "bee-sdk/1.0.12",
         }
         if self.api_key:
             h["Authorization"] = f"Bearer {self.api_key}"
