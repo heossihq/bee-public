@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.heossihq/bee-public",
   "description": "Bee by HEOSSI: governed multimodal intelligence - chat, code, security, research, documents, memory.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "title": "Bee by HEOSSI",
   "repository": {
     "url": "https://github.com/heossihq/bee-public",
@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "identifier": "bee-sdk",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

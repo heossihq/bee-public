@@ -9,29 +9,29 @@
       "role": "typescript-sdk",
       "source": "sdks/typescript",
       "sourceAvailability": "public",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     {
       "ecosystem": "PyPI",
-      "install": "pip install bee-sdk==1.0.7",
+      "install": "pip install bee-sdk==1.0.8",
       "license": "Apache-2.0",
       "name": "bee-sdk",
       "registryUrl": "https://pypi.org/project/bee-sdk/",
       "role": "python-sdk-and-mcp-runtime",
       "source": "sdks/python",
       "sourceAvailability": "public",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     {
       "ecosystem": "MCP Registry",
-      "install": "uvx --from \"bee-sdk==1.0.7\" bee-mcp",
+      "install": "uvx --from \"bee-sdk==1.0.8\" bee-mcp",
       "license": "Apache-2.0",
       "name": "io.github.heossihq/bee-public",
       "registryUrl": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.heossihq/bee-public",
       "role": "mcp-server",
       "source": "sdks/python",
       "sourceAvailability": "public",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     {
       "ecosystem": "npm",
@@ -42,7 +42,7 @@
       "role": "proprietary-code-cli",
       "source": null,
       "sourceAvailability": "proprietary",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     {
       "ecosystem": "Visual Studio Marketplace",

@@ -1,8 +1,8 @@
 [project]
 name = "bee-mcpb"
-version = "1.0.7"
+version = "1.0.8"
 description = "Bee MCP bundle launcher - runs the hosted bee-mcp server from bee-sdk"
 requires-python = ">=3.10"
 dependencies = [
-    "bee-sdk>=1.0.7",
+    "bee-sdk>=1.0.8",
 ]
