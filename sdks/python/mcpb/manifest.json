@@ -2,7 +2,7 @@
   "manifest_version": "0.4",
   "name": "bee",
   "display_name": "Bee by HEOSSI",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Bee by HEOSSI: 14 governed intelligence, trust, account, document, memory, and Quantum Reasoning Lab tools over the hosted Bee gateway. Model access follows your plan; Bee Cell is free.",
   "long_description": "Bee by HEOSSI - The Progressive Quantum-Native Intelligence Engine - is a governed multimodal intelligence platform (https://bee.heossi.com). This extension runs the hosted `bee-mcp` server: every tool call is forwarded to the Bee gateway over your API key - no GPU or model download. Your API key's plan decides which Bee tiers you can use; set a default tier below or pass `model` on bee_chat. Create a free API key in Bee Workspace. First use after idle may include serverless startup time. Tools call the hosted gateway; chat/search tools are read-only and document/memory writes remain scoped to your Bee account.",
   "author": {
