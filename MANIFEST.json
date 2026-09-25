@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "repository": "heossihq/bee-public",
+  "generatedAt": "2026-09-25T09:10:06Z",
+  "source": {
+    "repository": "heossihq/bee",
+    "commit": "2b85aefda8328fd4a064e114e3a66ee9551da879",
+    "contentDigest": "f27f0ec0f2140431fb1d8bb0185c3713dc3e7a5c35c0e3a2375b8153cd072a96"
+  },
+  "packages": {
+    "typescript": "1.0.28",
+    "python": "1.0.28",
+    "mcp": "1.0.28",
+    "vscodeExtension": "1.0.28"
+  },
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "sha256": "addc62651cb6934adb9705ba2b50457e46b63c4ed3cd7fdb4fa90c088304832a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "396a1d652c1bffb4a8b7c75f4333c8633b8f2e754746c339c91dd4346f926ca0"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "e5e7e6ba062d8488006ba4ae6c29c6d27a027454c02e6fd9d3c1ff6a2580e33a"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "533de5f355e65ef1635fe540f1cea572440022dc79f6b5509fbd5a7fff57b279"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "add76cfbf3e5d9e5a1d8a20f25d8f586e29634e7548568e12d2c559b0766271c"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8d435d6f3674d0db221159098a56a4fc90716615a33812d282db004db877aceb"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "83a296562c70dc9840a4d98a08722fc92bad436ca32855c773f72cd28a611501"
+    },
+    {
+      "path": "PACKAGE-INDEX.json",
+      "sha256": "c5d1f81711e2cba86360a92756649e0e4fdffddf8f5875f78148dce3d709a7eb"
+    },
+    {
+      "path": "PACKAGES.md",
+      "sha256": "c2206c225f2f6529a097eecdde1b739b6163dbc9aba91f8396a0bd9a313abab2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "af009845ddc8cd64d568498ef2e26b4e4c8d378565413e403b325ab5aaaaa33f"
+    },
+    {
+      "path": "SBOM.spdx.json",
+      "sha256": "3d64f6bf89e156532132ce00f9f39b2d585a4b84b465d568ba84d8c741c3ba1e"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "3b40c1c8cc7048d9d803b6f57d536d5c6a6e37bea4e3998b0837afe0ba327826"
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha256": "c4dc6e984193673f8a19854c7e7fdd44e219270afe16185a48149177b0c69376"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "6769318f23aa07f93f730c77c37b2cd812e101af9ecc5f1bcc08aee7a0ba4e9e"
+    },
+    {
+      "path": "api/openapi.json",
+      "sha256": "5c0a727441613ae94d98b5b8800b83e78cc9ddf44dfb76c4849af12310ee705e"
+    },
+    {
+      "path": "api/postman.json",
+      "sha256": "e68287b38548b7c605aae247b3df641e60be461ac2e99816ced24a4e10bdabdc"
+    },
+    {
+      "path": "assets/bee-logo-400.png",
+      "sha256": "c0d56bbe82093d73919f2711392861fe5f094f5241b99a99d4147e30a54fb3a3"
+    },
+    {
+      "path": "assets/bee-logo-official.png",
+      "sha256": "8caccb286b74398ba9b7d71d311dd8e7ff9097af58a727a28222236d3ad455c2"
+    },
+    {
+      "path": "assets/bee-public-social-preview.png",
+      "sha256": "0ed02ccc956859506261234163da9ec5df8014bc796b62b1f25589f58145ec09"
+    },
+    {
+      "path": "assets/heossi-logo-official.png",
+      "sha256": "fb0dfb66596dccdc2508dae665eb998935d175053c17e907297c979878a3a8a5"
+    },
+    {
+      "path": "assets/vscode/bee-code-controls.png",
+      "sha256": "687f3c63b8175f2fd5ed35bfbe85f015c49b03176e005e29b3c8ff7c7aaf90f2"
+    },
+    {
+      "path": "assets/vscode/bee-code-session.png",
+      "sha256": "c729b9b9a8f3e7ba4761d8666b30b4c5d7422afa13bc7c7efbacfc669769980d"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "df4eec05114cff3488645b7ec3e60aeaed29c3651382cc5a8a58ef5a1690d820"
+    },
+    {
+      "path": "docs/enterprise-diligence.md",
+      "sha256": "707f62ad2b1108ca3e791f241cba371b34175f46096052f8b5fad34e259b0e94"
+    },
+    {
+      "path": "docs/scenarios/README.md",
+      "sha256": "fb5bdb9a3fcfa582a84cf1a3686b54870bb8794b358c27f7128d4ebee512c82f"
+    },
+    {
+      "path": "docs/scenarios/bee-code.md",
+      "sha256": "de8c87fabd27d788ea74edb11089b8684a6cfbb38b7a0d2e32a693187869cf81"
+    },
+    {
+      "path": "docs/scenarios/quantum-reasoning.md",
+      "sha256": "8f3edca95fc864843d620bcafbe2c216a1b31605b64bd02b6fcbd9ae66781744"
+    },
+    {
+      "path": "docs/scenarios/tenant-rag.md",
+      "sha256": "31fbc0f03aa874a8a10165a0087bf0a6e99d3ef122cc66b67754b7e4202fca7f"
+    },
+    {
+      "path": "examples/python/quickstart.py",
+      "sha256": "5d7c9e80fe7dc43d28d3db57a828ba8798e6f35691f780570d1de6999da955e4"
+    },
+    {
+      "path": "examples/typescript/quickstart.ts",
+      "sha256": "9b9f6d9a5884466dd43cb7797339244a8f5f53e352809ae7d53cc4a2224b4cd2"
+    },
+    {
+      "path": "examples/typescript/streaming.ts",
+      "sha256": "5f8c2a6bb7ac5e99ee39f53a799aeb9f67bc9de3735e3ccf70f3af5b996cb885"
+    },
+    {
+      "path": "examples/typescript/vision.ts",
+      "sha256": "6cf703a28f4d69389216a2ad19cadfda5700c8db952af97ee0bf060b99db2345"
+    },
+    {
+      "path": "glama.json",
+      "sha256": "fd20e3acdd17bb0edadca91d891d643b536a28762adc5fbea20fc092c7494533"
+    },
+    {
+      "path": "llms-install.md",
+      "sha256": "f6581eb30c96b38a110c1f2ca619e5c659cf13c35ede68e65f555470ed9ec54f"
+    },
+    {
+      "path": "mcp/README.md",
+      "sha256": "bfdfcf5aaf2db33127430a2d65467cf00e252f6847f59c7770c9f622f7490803"
+    },
+    {
+      "path": "mcp/configs/claude-desktop.json",
+      "sha256": "c9c297aa6c369c95de56ec7af0c0026858d3fc7551d94a63ae5eb89b0f6244e5"
+    },
+    {
+      "path": "mcp/configs/cursor.json",
+      "sha256": "c9c297aa6c369c95de56ec7af0c0026858d3fc7551d94a63ae5eb89b0f6244e5"
+    },
+    {
+      "path": "mcp/configs/opencode.json",
+      "sha256": "998609433fddee3ae61d493036e91701b243177b892561e5e22bd87fbd38c780"
+    },
+    {
+      "path": "mcp/configs/vscode.json",
+      "sha256": "85415b50f4c883350ace0ef47e6f7a4d0d2ac947c35c98f0f02e54655be2b41e"
+    },
+    {
+      "path": "scripts/verify_bee_package_index.py",
+      "sha256": "e8d1ba423ff0ba58e75fb89fbaf41044fd740a5917af8c6b50a0dd4a698539b7"
+    },
+    {
+      "path": "sdks/python/README.md",
+      "sha256": "67432dd772e1c7643f78781810bd06b4b0ce4bf838d95df756fd3710e92a4fa5"
+    },
+    {
+      "path": "sdks/python/bee_sdk/__init__.py",
+      "sha256": "4fc62337076449aee7bd33e7a8119209d85f114991d0ddc41ef7c0483a1323c2"
+    },
+    {
+      "path": "sdks/python/bee_sdk/client.py",
+      "sha256": "7364c12e6112ca0e8287b237e21c38756fcb4562e488df7f277c9a621d72cfd4"
+    },
+    {
+      "path": "sdks/python/bee_sdk/mcp.py",
+      "sha256": "659ea201710fae4de951f5458b044844cb456b363602b61ba6d0244c3d7a1fe4"
+    },
+    {
+      "path": "sdks/python/bee_sdk/quantum_local.py",
+      "sha256": "8145dabb32e80d09621d5721497959e769119ef2ce13d0de87f52e2ca7af6525"
+    },
+    {
+      "path": "sdks/python/bee_sdk/types.py",
+      "sha256": "fea8c0e7f60829cb870bb58238b3ad6c6249791b99f40a00fd9c958ece301b6b"
+    },
+    {
+      "path": "sdks/python/mcpb/icon.png",
+      "sha256": "4ead5d1ec47826c7030308fecb4052fcdecdbedb189830022f362f7528a5854b"
+    },
+    {
+      "path": "sdks/python/mcpb/manifest.json",
+      "sha256": "7247dd14b504e52b86e82377a00ad14e65455f3218dce74d49c67182ef6c8a08"
+    },
+    {
+      "path": "sdks/python/mcpb/pyproject.toml",
+      "sha256": "89c0b6f66a36106c48bcadeb81373e5c681c0e9029a6a7e2ab7f806c1145944b"
+    },
+    {
+      "path": "sdks/python/mcpb/src/server.py",
+      "sha256": "6cdbddced0f318a9c421c615826e8915c3ae36af26ecb5b0243c7a8f1caee517"
+    },
+    {
+      "path": "sdks/python/pyproject.toml",
+      "sha256": "c3948a24ec99b12bb084a4c50f7225978935e529cef5b81d88e506fc41bea26a"
+    },
+    {
+      "path": "sdks/python/server.json",
+      "sha256": "81a9b82b693386b76e74293651c6e0131c6070de5e543f4543d14cd25d5c01d9"
+    },
+    {
+      "path": "sdks/python/tests/test_client_domain.py",
+      "sha256": "b7a196f867d9a1082f583fa8fce4e86ebadd08790f3936720170d3fb9cd9ca80"
+    },
+    {
+      "path": "sdks/python/tests/test_mcp_catalog.py",
+      "sha256": "db1e6eab83ade7e1830b818ce6b2690b04f32a333229c94a067b79ac46fb5240"
+    },
+    {
+      "path": "sdks/python/tests/test_quantum_local.py",
+      "sha256": "0363a666ab785fcdf639cec59fda01d9cbc3249292c3b5bd9651ac8d02e58fd5"
+    },
+    {
+      "path": "sdks/python/tests/test_upgrade_decision.py",
+      "sha256": "1a39589c6c4505cba63be7266e18b990932c7da5ddd53c34ce78ff7f626f9cf4"
+    },
+    {
+      "path": "sdks/typescript/.gitignore",
+      "sha256": "6e8e268b3dd65649b53fd4ee037b86ffbfa8833941fe26970f4780d6d76d3979"
+    },
+    {
+      "path": "sdks/typescript/.npmignore",
+      "sha256": "fb26305d21090ce5cb33adfb1ca114c45a2c813d0be91beaa755e8a44a9271e1"
+    },
+    {
+      "path": "sdks/typescript/CHANGELOG.md",
+      "sha256": "55cbe687743b1c0e41a33f62368624e250bffdb5f26e7d4f54f45eb20b6a12e3"
+    },
+    {
+      "path": "sdks/typescript/LICENSE",
+      "sha256": "8d435d6f3674d0db221159098a56a4fc90716615a33812d282db004db877aceb"
+    },
+    {
+      "path": "sdks/typescript/README.md",
+      "sha256": "55380eb049d4b72012d8dc195a0616ea7a4645f3712cdb3fe49285bdf58607a5"
+    },
+    {
+      "path": "sdks/typescript/package-lock.json",
+      "sha256": "e099646252a5bbb040ac04fe83154d68d247aa4bfe2e1fcf8f4cdb5a04c86fc8"
+    },
+    {
+      "path": "sdks/typescript/package.json",
+      "sha256": "d5af7b0a99f28c35e42b0e44c20e2b5e20ff5607fc06a60946a1b8c98cddeea8"
+    },
+    {
+      "path": "sdks/typescript/src/client.ts",
+      "sha256": "f300a1b9add8d21af06583fd7b7156a6f906efc03f31e802a7d4cbde4c71eedc"
+    },
+    {
+      "path": "sdks/typescript/src/errors.ts",
+      "sha256": "95762970456fc2a7379914ea7206c658c98f0e7ee009a1ec12ba80ba6b3ee4b5"
+    },
+    {
+      "path": "sdks/typescript/src/index.ts",
+      "sha256": "b8c689dce07e3deca04092fa162f43a38324367ce00f0c9319456a87d2465199"
+    },
+    {
+      "path": "sdks/typescript/src/quantum-local.ts",
+      "sha256": "97350debe885a9eed8bba955745084da90ca0d4660675743ee2ecca57a540b7c"
+    },
+    {
+      "path": "sdks/typescript/src/types.ts",
+      "sha256": "96ae796a865a5dd087eba57e7f07e326486b91ca2f622e2b2edafe903fcb372f"
+    },
+    {
+      "path": "sdks/typescript/tests/client-coverage.test.mjs",
+      "sha256": "6ae786ae2c404bdca949f7b5ecf7e07245c28036c55469040db2abeff4ec55c7"
+    },
+    {
+      "path": "sdks/typescript/tests/client.test.mjs",
+      "sha256": "6628bc00b0fa3aaf6c50ecc818f6022a43be1bdb3f1c93a7c2a7de55947d27b5"
+    },
+    {
+      "path": "sdks/typescript/tests/quantum-local.test.mjs",
+      "sha256": "dd205be46e8876ced015ed96976bbf332f34169650d01edfe988ec130fac0ad2"
+    },
+    {
+      "path": "sdks/typescript/tsconfig.cjs.json",
+      "sha256": "368938a638d9be8c8ba44f2af19fa24c9c4becacbb8a5613cd443cf6ef5f4587"
+    },
+    {
+      "path": "sdks/typescript/tsconfig.json",
+      "sha256": "9084b66be411738986e20bc8071226489c209fe784f7a2c0c5a0b7c1e454f7be"
+    },
+    {
+      "path": "trust/pq-register/.gitignore",
+      "sha256": "bd9f149c7e6eca27a7f8687ce489f3caf16a71a88058be9666d0826f83b6d28e"
+    },
+    {
+      "path": "trust/pq-register/CEREMONY.md",
+      "sha256": "0f0801dac9bf03d06b811df11859436cd0886ea1cd324fa92747f1e7610f6cff"
+    },
+    {
+      "path": "trust/pq-register/MANIFEST.sha384",
+      "sha256": "be19dd4e38bd9e4eef9eee8732a25422b6a5803ae1b003cfc7dcd17fb8b60d4d"
+    },
+    {
+      "path": "trust/pq-register/bee-pq-coverage-matrix.md",
+      "sha256": "73a5c0289e9309b20275879ffdff2a9df7b4d9980162a7e68ac78c8029117f8b"
+    },
+    {
+      "path": "trust/pq-register/bee-pq-register.json",
+      "sha256": "a9cf5902c0f2f19977e5b9bbdc6a700833279774f3e9854e879d642ab7a87fd6"
+    },
+    {
+      "path": "trust/pq-register/bee-pq-register.v0.9.9.sig.json",
+      "sha256": "42f300c1a68335271e1ae283059e2059e1902eb8559bba4c66d7624509d61dc3"
+    },
+    {
+      "path": "trust/pq-register/ci_gate.py",
+      "sha256": "5cccc86d39306d46023398a45e9b22a19c47722a6181181912c6fdb193cafcb5"
+    },
+    {
+      "path": "trust/pq-register/heossi-register-root-001.pub",
+      "sha256": "200e4102989d83e619a1a3fac19e191c2e3320ee921d7491960913caae12d685"
+    },
+    {
+      "path": "trust/pq-register/matrix.template.md",
+      "sha256": "23b7de49f4e993f645503501004fc0cd12ccb5373e6a024dca6205123934eeb7"
+    },
+    {
+      "path": "trust/pq-register/mldsa.py",
+      "sha256": "b0dff3b669e0259a0f67c58dc7aae728c91ba6c04232b3f5235db99e242277c7"
+    },
+    {
+      "path": "trust/pq-register/register.schema.json",
+      "sha256": "cf2cecbc3d2c600267565b3cb44734add2ddd59ed2e8e6b41e18f268df25d9ff"
+    },
+    {
+      "path": "trust/pq-register/render_register.py",
+      "sha256": "e86b219d9375ff6b7df9d79c402b7945fcac6f50f227cfc81d2049143531d4c7"
+    },
+    {
+      "path": "trust/pq-register/sign_register.py",
+      "sha256": "b3c198b11128e55e81a50c1feeb5b161c409367e7954b322461665d948a83520"
+    },
+    {
+      "path": "trust/pq-register/signature-envelope.schema.json",
+      "sha256": "9d61b8ed762048bbafbb14e0a63bf25f94b7f21ca053c30b5e990c41fd760f49"
+    },
+    {
+      "path": "trust/pq-register/test-fixtures/cbom-fail.json",
+      "sha256": "bbb336fdb77c2c00d1b8b2c73189e9ae157c783739ed82b072abb824af292d1e"
+    },
+    {
+      "path": "trust/pq-register/test-fixtures/cbom-pass.json",
+      "sha256": "2f45f891ce6305ae21cc5f23a5a19741ea0e8ca2a9bbfed0980083175fc76331"
+    },
+    {
+      "path": "trust/pq-register/test-fixtures/cbom-unclassified.json",
+      "sha256": "44f90ad228bca101fc1633769b977da928c58a73cbbc5d31f6dda07dad8186c0"
+    },
+    {
+      "path": "trust/pq-register/test-fixtures/lint-clean/crypto.ts",
+      "sha256": "8fdfaa01650ffcb4c4d34f4449f14c5ee3aa449d302f9a0ba9ad34ea1354ed96"
+    },
+    {
+      "path": "trust/pq-register/test-fixtures/lint-dirty/crypto.ts",
+      "sha256": "f87c56830c4427a39c03976eea0665358e8f6366e5816860cb00b914bc01f3cb"
+    },
+    {
+      "path": "trust/pq-register/test-fixtures/lint-dirty/signing.ts",
+      "sha256": "0adb94d16fde84d251f5785bec9cc6490a22d5b6e4d5402f518b8560b0c882a1"
+    },
+    {
+      "path": "trust/pq-register/test-root-099.pub",
+      "sha256": "bacbf2189ea84b299cb5565ed281b0d57ecfc1f66cbc11890e106117363cd5a8"
+    },
+    {
+      "path": "trust/pq-register/validate_register.py",
+      "sha256": "9a3098d309eee4c285a422dc06088aaaf203f6318e327bb2ba78fcde484fbc2c"
+    },
+    {
+      "path": "trust/pq-register/verify-ledger-anchor.mjs",
+      "sha256": "b55991a04891e9fda0cf3381735f6d0ca770df72c854db23eb036b87fb09e89a"
+    }
+  ]
+}
