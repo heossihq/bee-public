@@ -67,5 +67,6 @@ export type {
   TextPart,
   UsageAllowance,
   UsageBreakdownTier,
+  UsageFairUse,
   UsageResponse,
 } from "./types.js";

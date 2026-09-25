@@ -404,6 +404,15 @@ export interface UsageBreakdownTier {
   percent: number;
 }
 
+/** Relative Cell capacity under the task-weighted fair-use policy. */
+export interface UsageFairUse {
+  status: "available" | "approaching_limit" | "limited";
+  percent_used: number;
+  remaining_percent: number;
+  resets_at: string;
+  weighting: Array<"context" | "output" | "reasoning" | "tools" | "agent_turns">;
+}
+
 /** Result of {@link BeeClient.usage}.retrieve - real account, usage, and breakdown. */
 export interface UsageResponse {
   account: {
@@ -413,10 +422,12 @@ export interface UsageResponse {
     organization: string;
   };
   usage: {
-    period: "month";
+    period: "billing_period";
     resets_at: string;
     tokens_used: number;
     tokens_included: number | null;
+    usage_policy: "dynamic_fair_use" | "fixed_or_metered";
+    fair_use: UsageFairUse | null;
     messages: number;
     completed_requests: number;
     active_days: number;

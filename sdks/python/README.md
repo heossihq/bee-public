@@ -4,13 +4,14 @@ Official Python client and MCP server for **Bee by HEOSSI - The Progressive Quan
 
 <!-- mcp-name: io.github.heossihq/bee-public -->
 
-SDK version: `1.0.14` - includes auditable BSIS domain-intelligence metadata, 14 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
+SDK version: `1.0.27` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
 
 Includes a hosted **Model Context Protocol** server: `pip install bee-sdk` then
-run `bee-mcp` (stdio) to expose Bee's 14 tools to Claude Desktop, Cursor, VS
+run `bee-mcp` (stdio) to expose Bee's 16 tools to Claude Desktop, Cursor, VS
 Code, Zed, Windsurf, and other MCP clients:
 
-- intelligence: `bee_chat`, `bee_code`, `bee_security`, `bee_research`
+- intelligence and assurance: `bee_chat`, `bee_code`, `bee_security`,
+  `bee_smith_assurance`, `bee_research`
 - trust and account: `bee_verify_provenance`, `bee_usage`
 - knowledge: `bee_documents_search`, `bee_documents_add`
 - memory: `bee_memory_search`, `bee_memory_add`
@@ -223,7 +224,7 @@ The sync client retries 429/5xx with exponential backoff (max 4 attempts).
 ## Versioning
 
 `bee-sdk` follows the Bee API surface. Breaking API changes bump the **minor**
-version pre-1.0; the SDK is currently **1.0.14** and the API is `v1`.
+version pre-1.0; the SDK is currently **1.0.27** and the API is `v1`.
 
 ## License
 

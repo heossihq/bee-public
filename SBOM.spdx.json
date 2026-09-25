@@ -3,7 +3,7 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "name": "Bee Public Developer Distribution",
-  "documentNamespace": "https://bee.heossi.com/sbom/bee-public/ts-1.0.14_py-1.0.14_mcp-1.0.14",
+  "documentNamespace": "https://bee.heossi.com/sbom/bee-public/ts-1.0.27_py-1.0.27_mcp-1.0.27",
   "creationInfo": {
     "creators": [
       "Organization: HEOSSI (Pte.) Ltd."
@@ -14,7 +14,7 @@
     {
       "SPDXID": "SPDXRef-Package-Bee-Public",
       "name": "Bee Public Developer Distribution",
-      "versionInfo": "1.0.14",
+      "versionInfo": "1.0.27",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://github.com/heossihq/bee-public",
       "filesAnalyzed": false,
@@ -25,7 +25,7 @@
     {
       "SPDXID": "SPDXRef-Package-TypeScript-SDK",
       "name": "@heossihq/bee",
-      "versionInfo": "1.0.14",
+      "versionInfo": "1.0.27",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://www.npmjs.com/package/@heossihq/bee",
       "filesAnalyzed": false,
@@ -36,14 +36,14 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:npm/%40heossihq/bee@1.0.14"
+          "referenceLocator": "pkg:npm/%40heossihq/bee@1.0.27"
         }
       ]
     },
     {
       "SPDXID": "SPDXRef-Package-Python-SDK",
       "name": "bee-sdk",
-      "versionInfo": "1.0.14",
+      "versionInfo": "1.0.27",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://pypi.org/project/bee-sdk/",
       "filesAnalyzed": false,
@@ -54,14 +54,14 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:pypi/bee-sdk@1.0.14"
+          "referenceLocator": "pkg:pypi/bee-sdk@1.0.27"
         }
       ]
     },
     {
       "SPDXID": "SPDXRef-Package-MCP",
       "name": "bee-mcp",
-      "versionInfo": "1.0.14",
+      "versionInfo": "1.0.27",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.heossihq/bee-public",
       "filesAnalyzed": false,
