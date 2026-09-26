@@ -6,9 +6,9 @@ Every artifact is distributed through its canonical ecosystem registry. Bee does
 
 | Ecosystem | Artifact | Version | Role | License | Install |
 | --- | --- | --- | --- | --- | --- |
-| npm | [@heossihq/bee](https://www.npmjs.com/package/@heossihq/bee) | `1.0.30` | `typescript-sdk` | Apache-2.0 | `npm install @heossihq/bee` |
-| PyPI | [bee-sdk](https://pypi.org/project/bee-sdk/) | `1.0.30` | `python-sdk-and-mcp-runtime` | Apache-2.0 | `pip install bee-sdk==1.0.30` |
-| MCP Registry | [io.github.heossihq/bee-public](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.heossihq/bee-public) | `1.0.30` | `mcp-server` | Apache-2.0 | `uvx --from "bee-sdk==1.0.30" bee-mcp` |
+| npm | [@heossihq/bee](https://www.npmjs.com/package/@heossihq/bee) | `1.0.31` | `typescript-sdk` | Apache-2.0 | `npm install @heossihq/bee` |
+| PyPI | [bee-sdk](https://pypi.org/project/bee-sdk/) | `1.0.31` | `python-sdk-and-mcp-runtime` | Apache-2.0 | `pip install bee-sdk==1.0.31` |
+| MCP Registry | [io.github.heossihq/bee-public](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.heossihq/bee-public) | `1.0.31` | `mcp-server` | Apache-2.0 | `uvx --from "bee-sdk==1.0.31" bee-mcp` |
 | Visual Studio Marketplace | [Heossi.beecode](https://marketplace.visualstudio.com/items?itemName=Heossi.beecode) | `1.0.28` | `proprietary-vscode-extension` | Proprietary | `code --install-extension Heossi.beecode` |
 | Open VSX | [Heossi.beecode](https://open-vsx.org/extension/Heossi/beecode) | `1.0.28` | `proprietary-vscode-extension` | Proprietary | `Open VSX: Heossi.beecode` |
 
