@@ -1,5 +1,11 @@
 # @heossihq/bee
 
+## 1.0.33
+
+### Patch changes
+
+- Version metadata is aligned with Bee 1.0.33. No SDK behavior changed in this update.
+
 ## 1.0.32
 
 ### Patch changes
