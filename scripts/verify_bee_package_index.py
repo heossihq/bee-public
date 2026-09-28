@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -12,6 +13,8 @@ from typing import Optional
 
 
 USER_AGENT = "Bee-public-package-verifier/1.0"
+REQUEST_ATTEMPTS = 3
+RETRY_DELAY_SECONDS = 2
 
 
 def request_json(url: str, *, body: Optional[dict] = None) -> dict:
@@ -21,8 +24,15 @@ def request_json(url: str, *, body: Optional[dict] = None) -> dict:
         data = json.dumps(body).encode("utf-8")
         headers["Content-Type"] = "application/json"
     request = urllib.request.Request(url, data=data, headers=headers)
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.load(response)
+    for attempt in range(1, REQUEST_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.load(response)
+        except (OSError, TimeoutError):
+            if attempt == REQUEST_ATTEMPTS:
+                raise
+            time.sleep(RETRY_DELAY_SECONDS)
+    raise AssertionError("unreachable")
 
 
 def registry_version(artifact: dict) -> str:

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "repository": "heossihq/bee-public",
-  "generatedAt": "2026-09-28T10:27:30Z",
+  "generatedAt": "2026-09-28T10:50:01Z",
   "source": {
     "repository": "heossihq/bee",
-    "commit": "d346b19ddef4f5fa9d4a83202a8569c2fe72b547",
-    "contentDigest": "af956049fc39e1a72fdba9ede2442e2b31360f2007ca211a79a15267f1317f0e"
+    "commit": "8db6728d4f4af17f22ee004e05d5981e8d6a6420",
+    "contentDigest": "ebd395ddb05dde4159c6020fa9cb552d431e56c4d229d5a774750c2180e94c1e"
   },
   "packages": {
     "typescript": "1.0.41",
@@ -64,7 +64,7 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "9ba7b0bd7dd75fc1160ab2823d84219595f6b07305d98dd84ef6e6cbea41b5b3"
+      "sha256": "0993bde46f7747ae3da617152560a90984d170f8728a8c6cefa40d241a934aa2"
     },
     {
       "path": "SUPPORT.md",
@@ -172,7 +172,7 @@
     },
     {
       "path": "scripts/verify_bee_package_index.py",
-      "sha256": "e8d1ba423ff0ba58e75fb89fbaf41044fd740a5917af8c6b50a0dd4a698539b7"
+      "sha256": "90b86eb946ad7100be0571f049aea3c97197f1363e0cf8277be1ee4ad399b73f"
     },
     {
       "path": "sdks/python/README.md",
