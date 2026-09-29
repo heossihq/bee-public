@@ -42,7 +42,7 @@
       "role": "proprietary-vscode-extension",
       "source": null,
       "sourceAvailability": "proprietary",
-      "version": "1.0.41"
+      "version": "1.0.45"
     },
     {
       "ecosystem": "Open VSX",
@@ -53,7 +53,7 @@
       "role": "proprietary-vscode-extension",
       "source": null,
       "sourceAvailability": "proprietary",
-      "version": "1.0.41"
+      "version": "1.0.45"
     }
   ],
   "canonicalSource": "https://github.com/heossihq/bee-public",
