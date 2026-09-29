@@ -48,12 +48,12 @@ try:  # single source of truth for the advertised version
 
     SERVER_VERSION = _pkg_version("bee-sdk")
 except Exception:  # not installed (running from source) - fall back
-    SERVER_VERSION = "1.0.41"
+    SERVER_VERSION = "1.0.43"
 
 # MCP protocol revision this server speaks. We echo the client's requested
 # version when it sends one (forward-compatible negotiation); this is the
 # fallback when the client omits it.
-DEFAULT_PROTOCOL_VERSION = "2024-11-05"
+DEFAULT_PROTOCOL_VERSION = "2025-06-18"
 
 # Public request model ids - mirror of bee_sdk.types.CustomerModelId. Enclave is
 # a deployment mode and Ignite is a research programme, so neither is a public
@@ -992,10 +992,10 @@ def handle_resource_read(client: Bee, uri: str) -> dict[str, Any]:
 
 SERVER_INFO = {
     "name": "bee",
-    "title": "Bee by HEOSSI",
+    "title": "Bee: Quantum Intelligence",
     "version": SERVER_VERSION,
     "description": (
-        "Bee by HEOSSI - The Progressive Quantum-Native Intelligence Engine: a governed "
+        "Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine: a governed "
         "multimodal intelligence platform for specialist work."
     ),
     "websiteUrl": "https://bee.heossi.com",

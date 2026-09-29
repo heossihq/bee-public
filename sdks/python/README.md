@@ -1,10 +1,10 @@
 # bee-sdk
 
-Official Python client and MCP server for **Bee by HEOSSI - The Progressive Quantum-Native Intelligence Engine**, a governed multimodal intelligence platform from [HEOSSI](https://www.heossi.com).
+Official Python client and MCP server for **Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine**, a governed multimodal intelligence platform from [HEOSSI](https://www.heossi.com).
 
 <!-- mcp-name: io.github.heossihq/bee-public -->
 
-SDK version: `1.0.41` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
+SDK version: `1.0.43` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
 
 Includes a hosted **Model Context Protocol** server: `pip install bee-sdk` then
 run `bee-mcp` (stdio) to expose Bee's 16 tools to Claude Desktop, Cursor, VS
@@ -28,14 +28,12 @@ trusted authenticated proxy). See
 [bee.heossi.com/docs/mcp](https://bee.heossi.com/docs/mcp).
 
 > **Status:** functional sync + async client (stdlib + optional `httpx`).
-> The SDK targets the Bee `/chat/completions` API contract on
-> production via the public gateway `https://api.bee.heossi.com/bee` - this
-> is the default and it is where API-key auth, plan / per-tier allowance
-> enforcement and usage metering happen. Do **not** point `BEE_API_URL`
-> at the raw Modal app URL: that bypasses billing and a `bee_sk_` key
-> is rejected there (the backend only trusts Supabase JWTs / the
-> static `BEE_API_KEYS` env, not customer-issued keys). Override
-> `BEE_API_URL` only for a self-hosted Bee Enclave or staging.
+> The SDK requires a `bee_sk_` key. It targets the Bee `/chat/completions`
+> API contract on production via the public gateway
+> `https://api.bee.heossi.com/bee` - this is the default and it is where
+> API-key auth, plan / per-tier allowance enforcement and usage metering
+> happen. The gateway translates that edge key into an internal hybrid
+> credential; do **not** point `BEE_API_URL` at the raw Modal app URL.
 
 ## Install
 
@@ -224,7 +222,7 @@ The sync client retries 429/5xx with exponential backoff (max 4 attempts).
 ## Versioning
 
 `bee-sdk` follows the Bee API surface. Breaking API changes bump the **minor**
-version pre-1.0; the SDK is currently **1.0.41** and the API is `v1`.
+version pre-1.0; the SDK is currently **1.0.43** and the API is `v1`.
 
 ## License
 

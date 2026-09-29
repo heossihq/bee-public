@@ -1,6 +1,6 @@
 # @heossihq/bee
 
-Official TypeScript / JavaScript SDK for **Bee by HEOSSI - The Progressive Quantum-Native Intelligence Engine**.
+Official TypeScript / JavaScript SDK for **Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine**.
 
 [![npm](https://img.shields.io/npm/v/@heossihq/bee.svg)](https://www.npmjs.com/package/@heossihq/bee)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
@@ -24,7 +24,10 @@ npm install @heossihq/bee
 ## Quickstart
 
 Get an API key from [workspace.bee.heossi.com/account/api-keys](https://workspace.bee.heossi.com/account/api-keys).
-The default API base is `https://api.bee.heossi.com/bee`.
+The default API base is `https://api.bee.heossi.com/bee`. The SDK requires an
+API key; the public gateway translates that edge credential into an internal
+hybrid delegation and does not forward the raw `bee_sk_*` key to Modal or
+Workspace internals.
 
 ```ts
 import { BeeClient } from "@heossihq/bee";

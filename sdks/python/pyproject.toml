@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "bee-sdk"
-version = "1.0.41"
-description = "Bee by HEOSSI - The Progressive Quantum-Native Intelligence Engine"
+version = "1.0.43"
+description = "Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }

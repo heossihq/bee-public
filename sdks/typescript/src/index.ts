@@ -1,6 +1,6 @@
 /**
  * @heossihq/bee - Official TypeScript / JavaScript SDK for
- * Bee by HEOSSI - The Progressive Quantum-Native Intelligence Engine.
+ * Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine.
  *
  * Bee exposes an OpenAI-compatible /chat/completions surface backed by a
  * governed model ladder (Cell, Brood, Comb, Buzz, Hive, Swarm).
