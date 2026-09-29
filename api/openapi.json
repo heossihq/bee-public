@@ -1,9 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Bee by HEOSSI - Developer API",
+    "title": "Bee: Quantum Intelligence - Developer API",
     "version": "2026-08-04",
-    "description": "OpenAI-compatible developer API for Bee by HEOSSI. API keys are created in Bee Workspace and sent as Bearer credentials."
+    "description": "OpenAI-compatible developer API for Bee: Quantum Intelligence. API keys are created in Bee Workspace and sent as Bearer credentials."
   },
   "servers": [
     {

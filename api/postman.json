@@ -1,9 +1,9 @@
 {
   "info": {
     "_postman_id": "bee-developer-api-2026-08-04",
-    "name": "Bee by HEOSSI - Developer API",
+    "name": "Bee: Quantum Intelligence - Developer API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": "OpenAI-compatible developer API for Bee by HEOSSI. Set bee_api_key before sending authenticated requests."
+    "description": "OpenAI-compatible developer API for Bee: Quantum Intelligence. Set bee_api_key before sending authenticated requests."
   },
   "variable": [
     {

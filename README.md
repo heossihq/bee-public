@@ -1,6 +1,6 @@
-<p align="center"><img src="./assets/bee-logo-400.png" alt="Bee by HEOSSI" width="120"></p>
+<p align="center"><img src="./assets/bee-logo-400.png" alt="Bee: Quantum Intelligence" width="120"></p>
 
-# Bee by HEOSSI
+# Bee: Quantum Intelligence
 
 [![npm](https://img.shields.io/npm/v/%40heossihq%2Fbee?label=npm)](https://www.npmjs.com/package/@heossihq/bee)
 [![PyPI](https://img.shields.io/pypi/v/bee-sdk?label=PyPI)](https://pypi.org/project/bee-sdk/)
@@ -25,7 +25,7 @@ The canonical [package catalog](./PACKAGES.md) records each public developer dis
 | Python SDK | `pip install bee-sdk` | [`sdks/python`](./sdks/python) |
 | MCP server | `uvx --from bee-sdk@latest bee-mcp` | [`mcp`](./mcp) · [`server.json`](./sdks/python/server.json) |
 | OpenAI-compatible API | `https://api.bee.heossi.com/bee` | [`openapi.json`](./api/openapi.json) · [`postman.json`](./api/postman.json) |
-| BEE Code for VS Code | `Heossi.beecode` | [Microsoft Marketplace](https://marketplace.visualstudio.com/items?itemName=Heossi.beecode) · [Open VSX](https://open-vsx.org/extension/Heossi/beecode) |
+| Bee: Quantum Intelligence - Code | `Heossi.beecode` | [Microsoft Marketplace](https://marketplace.visualstudio.com/items?itemName=Heossi.beecode) · [Open VSX](https://open-vsx.org/extension/Heossi/beecode) |
 | Bee Code CLI | `npm install -g @heossihq/beecode` | [Download guide](https://bee.heossi.com/download) |
 | PQ assurance | Signed public coverage register | [`trust/pq-register`](./trust/pq-register) |
 
