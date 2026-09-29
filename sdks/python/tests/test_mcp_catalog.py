@@ -3,7 +3,7 @@
 import unittest
 from typing import get_args
 
-from bee_sdk.mcp import DOMAINS, MODELS, RESOURCE_TEMPLATES, RESOURCES, TOOLS, handle_tool_call
+from bee_sdk.mcp import DOMAINS, MODELS, RESOURCE_TEMPLATES, RESOURCES, TOOLS, dispatch, handle_tool_call
 from bee_sdk.types import CustomerModelId
 
 EXPECTED_TOOLS = [
@@ -41,6 +41,26 @@ EXPECTED_MCP_DOMAINS = [
 
 
 class MCPCatalogTest(unittest.TestCase):
+    def test_keyless_handshake_and_catalog_keep_operations_authenticated(self) -> None:
+        initialized = dispatch(None, {"id": 1, "method": "initialize"})
+        self.assertEqual(initialized["result"]["serverInfo"]["name"], "bee")
+        self.assertEqual(
+            len(dispatch(None, {"id": 2, "method": "tools/list"})["result"]["tools"]), 16
+        )
+        self.assertEqual(
+            len(dispatch(None, {"id": 3, "method": "resources/list"})["result"]["resources"]), 4
+        )
+        denied = dispatch(None, {
+            "id": 4, "method": "tools/call",
+            "params": {"name": "bee_chat", "arguments": {"message": "hello"}},
+        })
+        self.assertTrue(denied["result"]["isError"])
+        self.assertIn("BEE_API_KEY", denied["result"]["content"][0]["text"])
+        denied_resource = dispatch(None, {
+            "id": 5, "method": "resources/read", "params": {"uri": "bee://status"},
+        })
+        self.assertEqual(denied_resource["error"]["code"], -32001)
+
     def test_model_catalog_matches_the_public_sdk_request_type(self) -> None:
         expected = [
             "bee-cell",

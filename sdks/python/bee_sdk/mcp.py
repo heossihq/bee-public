@@ -37,6 +37,7 @@ and metered by the Bee gateway.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from typing import Any
 from urllib.parse import unquote
@@ -48,7 +49,7 @@ try:  # single source of truth for the advertised version
 
     SERVER_VERSION = _pkg_version("bee-sdk")
 except Exception:  # not installed (running from source) - fall back
-    SERVER_VERSION = "1.0.43"
+    SERVER_VERSION = "1.0.44"
 
 # MCP protocol revision this server speaks. We echo the client's requested
 # version when it sends one (forward-compatible negotiation); this is the
@@ -1013,7 +1014,7 @@ SERVER_CAPABILITIES = {"tools": {}, "resources": {}}
 # ── Shared JSON-RPC dispatch (used by both stdio and HTTP transports) ────────
 
 
-def dispatch(client: Bee, msg: dict) -> dict | None:
+def dispatch(client: Bee | None, msg: dict) -> dict | None:
     """Handle one JSON-RPC message. Returns the response dict, or None for
     notifications (no id) that need no reply. Never raises - protocol errors
     come back as JSON-RPC error objects."""
@@ -1042,6 +1043,8 @@ def dispatch(client: Bee, msg: dict) -> dict | None:
             return {"jsonrpc": "2.0", "id": msg_id, "result": {"tools": TOOLS}}
         if method == "tools/call":
             try:
+                if client is None:
+                    raise BeeAPIError(401, "A Bee API key is required for tool calls.")
                 result_text = handle_tool_call(
                     client, params.get("name", ""), params.get("arguments", {})
                 )
@@ -1079,6 +1082,12 @@ def dispatch(client: Bee, msg: dict) -> dict | None:
                 "result": {"resourceTemplates": RESOURCE_TEMPLATES},
             }
         if method == "resources/read":
+            if client is None:
+                return {
+                    "jsonrpc": "2.0",
+                    "id": msg_id,
+                    "error": {"code": -32001, "message": "A Bee API key is required to read resources."},
+                }
             return {
                 "jsonrpc": "2.0",
                 "id": msg_id,
@@ -1096,7 +1105,7 @@ def dispatch(client: Bee, msg: dict) -> dict | None:
 # ── stdio transport (what every desktop MCP client uses) ─────────────────────
 
 
-def run_stdio(client: Bee) -> None:
+def run_stdio(client: Bee | None) -> None:
     for line in sys.stdin:
         line = line.strip()
         if not line:
@@ -1123,7 +1132,7 @@ def run_stdio(client: Bee) -> None:
 # tenants (each presenting their own bee_sk_ key).
 
 
-def run_http(default_client: Bee, port: int) -> None:
+def run_http(default_client: Bee | None, port: int) -> None:
     import os as _os
     from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -1135,11 +1144,11 @@ def run_http(default_client: Bee, port: int) -> None:
         def log_message(self, *args):  # silence default stderr access log
             return
 
-        def _client_for_request(self) -> Bee:
+        def _client_for_request(self) -> Bee | None:
             auth = self.headers.get("Authorization", "")
             m = auth[7:].strip() if auth[:7].lower() == "bearer " else None
             if m:
-                return Bee(base_url=default_client.base_url, api_key=m)
+                return Bee(base_url=default_client.base_url if default_client else None, api_key=m)
             return default_client
 
         def do_GET(self):
@@ -1204,8 +1213,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    client = Bee()  # reads BEE_API_KEY / BEE_API_URL from the environment
-    if not client.api_key:
+    client = Bee() if os.environ.get("BEE_API_KEY") else None
+    if client is None:
         print(
             "WARNING: no BEE_API_KEY set - tool calls will fail with 401 unless a "
             "request supplies an Authorization: Bearer bee_sk_… header. Issue a key "
