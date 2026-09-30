@@ -1,5 +1,17 @@
 # @heossihq/bee
 
+## 1.0.62
+
+### Patch changes
+
+- Publish the TypeScript SDK as part of the unified Bee 1.0.62 release.
+
+## 1.0.61
+
+### Patch changes
+
+- Publish the TypeScript SDK as part of the unified Bee 1.0.61 release.
+
 ## 1.0.60
 
 ### Patch changes
