@@ -45,8 +45,8 @@ def registry_version(artifact: dict) -> str:
         return request_json(f"https://pypi.org/pypi/{name}/json")["info"]["version"]
     if ecosystem == "MCP Registry":
         response = request_json(
-            "https://registry.modelcontextprotocol.io/v0/servers"
-            "?search=io.github.heossihq/bee-public"
+            "https://registry.modelcontextprotocol.io/v0.1/servers"
+            f"?search={urllib.parse.quote(name, safe='')}&version=latest"
         )
         versions = [
             (entry.get("server") or entry).get("version")
