@@ -53,6 +53,16 @@ RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 # decided by the key's plan at the gateway (403 model_access_denied when the
 # plan doesn't include it). bee-cell is the free tier, so it's the safe
 # default; override per-call or via BEE_MODEL.
+#
+# Public model ladder (one vocabulary; no separate API product aliases):
+#   bee-cell   -> Bee Cell 1.0    (128K context, free entry tier)
+#   bee-brood  -> Bee Brood 1.0   (256K context, cost-efficient reasoning)
+#   bee-comb   -> Bee Comb 2.0    (256K context, workstation reasoning, 1M mode)
+#   bee-buzz   -> Bee Buzz 1.0    (256K context, agent workhorse, 1M mode)
+#   bee-hive   -> Bee Hive 1.0    (256K context, premium multimodal tier)
+#   bee-swarm  -> Bee Swarm 1.0   (1M context fabric, governed routing)
+#
+# API plans Free/Build/Scale/Hive/Swarm grant cumulative access to this ladder.
 DEFAULT_MODEL = "bee-cell"
 
 
@@ -113,7 +123,7 @@ class _BaseClient:
         h = {
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "User-Agent": "bee-sdk/1.0.65",
+            "User-Agent": "bee-sdk/1.0.66",
         }
         h["Authorization"] = f"Bearer {self.api_key}"
         if extra:

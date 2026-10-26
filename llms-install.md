@@ -1,6 +1,6 @@
 # Bee MCP installation for agents
 
-Install `bee-mcp`, the stdio MCP server included in `bee-sdk`. It forwards fourteen governed tools to `https://api.bee.heossi.com/bee`; it does not download a model or require a GPU.
+Install `bee-mcp`, the stdio MCP server included in `bee-sdk`. It forwards sixteen governed tools to `https://api.bee.heossi.com/bee`; it does not download a model or require a GPU.
 
 ## Requirements
 
@@ -22,6 +22,6 @@ uvx --from bee-sdk@latest bee-mcp
 
 Register that command in the client's MCP configuration. Templates for Claude Desktop, Cursor, VS Code, and OpenCode are in [`mcp/configs`](./mcp/configs). Substitute the user's key locally and never write a real key into source control.
 
-After restarting the client, confirm the Bee server connects and lists fourteen tools. Call `bee_chat` with `{"message":"Say OK.","max_tokens":16}`. A non-empty response verifies the authenticated gateway path.
+After restarting the client, confirm the Bee server connects and lists sixteen tools. Call `bee_chat` with `{"message":"Say OK.","max_tokens":16}`. A non-empty response verifies the authenticated gateway path.
 
 Canonical MCP Registry identity: `io.github.heossihq/bee-public`.

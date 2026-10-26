@@ -44,7 +44,16 @@ export type ImageUrlPart = {
 };
 export type ContentPart = TextPart | ImageUrlPart;
 
-/** Customer-selectable production model tiers. Access is enforced by the API key's plan. */
+/**
+ * Customer-selectable production model tiers. Access is enforced by the API
+ * key's plan. There is one public ladder - no separate API product aliases:
+ * - `bee-cell`: Bee Cell 1.0 - 128K context, free entry tier.
+ * - `bee-brood`: Bee Brood 1.0 - 256K context, cost-efficient reasoning.
+ * - `bee-comb`: Bee Comb 2.0 - 256K context, workstation reasoning, 1M mode.
+ * - `bee-buzz`: Bee Buzz 1.0 - 256K context, agent and builder workhorse, 1M mode.
+ * - `bee-hive`: Bee Hive 1.0 - 256K context, premium multimodal tier.
+ * - `bee-swarm`: Bee Swarm 1.0 - 1M context fabric, governed routing.
+ */
 export type BeeModelId =
   | "bee-cell"
   | "bee-brood"
