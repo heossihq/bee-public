@@ -1,6 +1,6 @@
 <p align="center"><img src="./assets/bee-logo-400.png" alt="Bee: Quantum Intelligence" width="120"></p>
 
-# Bee: Quantum Intelligence
+# Bee: Quantum Intelligence™
 
 [![npm](https://img.shields.io/npm/v/%40heossihq%2Fbee?label=npm)](https://www.npmjs.com/package/@heossihq/bee)
 [![PyPI](https://img.shields.io/pypi/v/bee-sdk?label=PyPI)](https://pypi.org/project/bee-sdk/)
@@ -117,3 +117,6 @@ Read [CONTRIBUTING.md](./CONTRIBUTING.md), [SUPPORT.md](./SUPPORT.md), and the [
 ## License
 
 [Apache License 2.0](./LICENSE) · Copyright 2026 HEOSSI (Pte.) Ltd.
+---
+
+Bee™ and the Bee knot logo are trademarks of HEOSSI (Pte.) Ltd., Singapore.

@@ -1,6 +1,6 @@
-# Bee MCP server
+# Bee™ MCP server
 
-Bee MCP exposes **16 governed tools** through the hosted Bee gateway. Every call is authenticated, tenant-scoped, plan-gated and metered. The server runs locally over stdio and forwards tool calls to Bee over HTTPS — no model download, no GPU.
+Bee MCP exposes **16 governed tools** through the hosted Bee gateway. Every call is authenticated, tenant-scoped, plan-gated and metered. The server runs locally over stdio and forwards tool calls to Bee over HTTPS - no model download, no GPU.
 
 ## At a glance
 
@@ -73,7 +73,7 @@ Never commit a real API key. Client-specific templates are in [`mcp/configs`](./
 
 ## Plan gating and metering
 
-The gateway enforces the API key's plan on every call: which model tiers you can reach, tenant policy, token allowance, and usage metering. Model access is a property of the key, not of the client — the same tool call can succeed on one plan and be refused on another. Tool calls never run locally and never see your files unless you pass them in.
+The gateway enforces the API key's plan on every call: which model tiers you can reach, tenant policy, token allowance, and usage metering. Model access is a property of the key, not of the client - the same tool call can succeed on one plan and be refused on another. Tool calls never run locally and never see your files unless you pass them in.
 
 ## Security posture
 
@@ -82,3 +82,6 @@ The gateway enforces the API key's plan on every call: which model tiers you can
 - The gateway, not the client, is the trust boundary. A compromised client cannot exceed the key's plan or tenant.
 
 Live tool catalog and per-client setup: [bee.heossi.com/docs/mcp](https://bee.heossi.com/docs/mcp).
+---
+
+Bee™ and the Bee knot logo are trademarks of HEOSSI (Pte.) Ltd., Singapore.
