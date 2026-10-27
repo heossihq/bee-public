@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "repository": "heossihq/bee-public",
-  "generatedAt": "2026-10-27T19:04:11Z",
+  "generatedAt": "2026-10-27T19:17:16Z",
   "source": {
     "repository": "heossihq/bee",
-    "commit": "f3004afeadd7deaf9ba5e02dd2556c8c097118f7",
-    "contentDigest": "31267abc9e394b713623fb5f470456d5bbca2e48683330301fe47da36fa2471c"
+    "commit": "41d03f1f716a31f12e50b13fc1164da05bcd4b48",
+    "contentDigest": "f1fdede15ee22a70663c6f28851481e902225613ae1cd9a19d0e69e03645d5fd"
   },
   "packages": {
     "typescript": "1.0.71",
     "python": "1.0.71",
     "mcp": "1.0.71",
-    "vscodeExtension": "1.0.70"
+    "vscodeExtension": "1.0.71"
   },
   "files": [
     {
@@ -44,11 +44,11 @@
     },
     {
       "path": "PACKAGE-INDEX.json",
-      "sha256": "7bb15edba3a2f97c5115855a9c5d23f381880cf75b715ba9e1635efcd2ca59ae"
+      "sha256": "cac0b275d8af6512509e4e900b5b5c382a30d3cfecb41d5756c22778308333e6"
     },
     {
       "path": "PACKAGES.md",
-      "sha256": "3d790a51881b960694b1a24372eff50dd639dbb67525c158cf760dd8f7a4b74c"
+      "sha256": "011c66f4349a48aacbc6e89743fadd3395bbc9ccc54262c2a8e960db929f564f"
     },
     {
       "path": "README.md",
@@ -64,7 +64,7 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "abafc95e66266864dcbe930b0df29db0f02ee0414e5be8ed92214dbce770ada7"
+      "sha256": "3e92fef81bc2c3584c3b5375c03180e448636770ef877755e652e92fae90c7af"
     },
     {
       "path": "SUPPORT.md",
