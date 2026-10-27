@@ -60,7 +60,7 @@ from .types import (
     QuantumReasoningRealRequestStatus,
 )
 
-__version__ = "1.0.67"
+__version__ = "1.0.69"
 __all__ = [
     "Bee",
     "AsyncBee",
