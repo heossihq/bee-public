@@ -123,7 +123,11 @@ class _BaseClient:
         h = {
             "Content-Type": "application/json",
             "Accept": "application/json",
+<<<<<<< HEAD
             "User-Agent": "bee-sdk/1.0.71",
+=======
+            "User-Agent": "bee-sdk/1.0.73",
+>>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
         }
         h["Authorization"] = f"Bearer {self.api_key}"
         if extra:

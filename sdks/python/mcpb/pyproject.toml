@@ -1,8 +1,16 @@
 [project]
 name = "bee-mcpb"
+<<<<<<< HEAD
 version = "1.0.71"
 description = "Bee MCP bundle launcher - runs the hosted bee-mcp server from bee-sdk"
 requires-python = ">=3.10"
 dependencies = [
     "bee-sdk>=1.0.71",
+=======
+version = "1.0.73"
+description = "Bee MCP bundle launcher - runs the hosted bee-mcp server from bee-sdk"
+requires-python = ">=3.10"
+dependencies = [
+    "bee-sdk>=1.0.73",
+>>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
 ]

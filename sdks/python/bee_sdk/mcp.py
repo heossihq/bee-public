@@ -49,7 +49,11 @@ try:  # single source of truth for the advertised version
 
     SERVER_VERSION = _pkg_version("bee-sdk")
 except Exception:  # not installed (running from source) - fall back
+<<<<<<< HEAD
     SERVER_VERSION = "1.0.71"
+=======
+    SERVER_VERSION = "1.0.73"
+>>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
 
 # MCP protocol revision this server speaks. We echo the client's requested
 # version when it sends one (forward-compatible negotiation); this is the

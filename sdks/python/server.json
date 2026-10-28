@@ -2,7 +2,11 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.heossihq/bee-public",
   "description": "Bee governed intelligence for chat, code, research, documents, and memory.",
+<<<<<<< HEAD
   "version": "1.0.71",
+=======
+  "version": "1.0.73",
+>>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
   "title": "Bee: Quantum Intelligence",
   "repository": {
     "url": "https://github.com/heossihq/bee-public",
@@ -13,7 +17,11 @@
     {
       "registryType": "pypi",
       "identifier": "bee-sdk",
+<<<<<<< HEAD
       "version": "1.0.71",
+=======
+      "version": "1.0.73",
+>>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

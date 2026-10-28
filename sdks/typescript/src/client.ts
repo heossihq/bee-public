@@ -442,8 +442,9 @@ async function* iterateSse(resp: Response): AsyncIterable<ChatCompletionChunk> {
       if (done) break;
       buffer += decoder.decode(value, { stream: true });
 
-      let eventEnd: number;
-      while ((eventEnd = buffer.indexOf("\n\n")) !== -1) {
+      for (;;) {
+        const eventEnd = buffer.indexOf("\n\n");
+        if (eventEnd === -1) break;
         const event = buffer.slice(0, eventEnd);
         buffer = buffer.slice(eventEnd + 2);
         const dataLine = event
