@@ -4,11 +4,7 @@ Official Python client and MCP server for **Bee: Quantum Intelligence - The Prog
 
 <!-- mcp-name: io.github.heossihq/bee-public -->
 
-<<<<<<< HEAD
-SDK version: `1.0.71` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
-=======
-SDK version: `1.0.73` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+SDK version: `1.0.74` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
 
 Includes a hosted **Model Context Protocol** server: `pip install bee-sdk` then
 run `bee-mcp` (stdio) to expose Bee's 16 tools to Claude Desktop, Cursor, VS
@@ -226,11 +222,7 @@ The sync client retries 429/5xx with exponential backoff (max 4 attempts).
 ## Versioning
 
 `bee-sdk` follows the Bee API surface. Breaking API changes bump the **minor**
-<<<<<<< HEAD
-version pre-1.0; the SDK is currently **1.0.71** and the API is `v1`.
-=======
-version pre-1.0; the SDK is currently **1.0.73** and the API is `v1`.
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+version pre-1.0; the SDK is currently **1.0.74** and the API is `v1`.
 
 ## License
 

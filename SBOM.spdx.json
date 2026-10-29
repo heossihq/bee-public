@@ -3,11 +3,7 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "name": "Bee Public Developer Distribution",
-<<<<<<< HEAD
-  "documentNamespace": "https://bee.heossi.com/sbom/bee-public/ts-1.0.71_py-1.0.71_mcp-1.0.71",
-=======
-  "documentNamespace": "https://bee.heossi.com/sbom/bee-public/ts-1.0.73_py-1.0.73_mcp-1.0.73",
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+  "documentNamespace": "https://bee.heossi.com/sbom/bee-public/ts-1.0.74_py-1.0.74_mcp-1.0.74",
   "creationInfo": {
     "creators": [
       "Organization: HEOSSI (Pte.) Ltd."
@@ -18,11 +14,7 @@
     {
       "SPDXID": "SPDXRef-Package-Bee-Public",
       "name": "Bee Public Developer Distribution",
-<<<<<<< HEAD
-      "versionInfo": "1.0.71",
-=======
-      "versionInfo": "1.0.73",
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+      "versionInfo": "1.0.74",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://github.com/heossihq/bee-public",
       "filesAnalyzed": false,
@@ -33,11 +25,7 @@
     {
       "SPDXID": "SPDXRef-Package-TypeScript-SDK",
       "name": "@heossihq/bee",
-<<<<<<< HEAD
-      "versionInfo": "1.0.71",
-=======
-      "versionInfo": "1.0.73",
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+      "versionInfo": "1.0.74",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://www.npmjs.com/package/@heossihq/bee",
       "filesAnalyzed": false,
@@ -48,22 +36,14 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-<<<<<<< HEAD
-          "referenceLocator": "pkg:npm/%40heossihq/bee@1.0.71"
-=======
-          "referenceLocator": "pkg:npm/%40heossihq/bee@1.0.73"
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+          "referenceLocator": "pkg:npm/%40heossihq/bee@1.0.74"
         }
       ]
     },
     {
       "SPDXID": "SPDXRef-Package-Python-SDK",
       "name": "bee-sdk",
-<<<<<<< HEAD
-      "versionInfo": "1.0.71",
-=======
-      "versionInfo": "1.0.73",
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+      "versionInfo": "1.0.74",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://pypi.org/project/bee-sdk/",
       "filesAnalyzed": false,
@@ -74,22 +54,14 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-<<<<<<< HEAD
-          "referenceLocator": "pkg:pypi/bee-sdk@1.0.71"
-=======
-          "referenceLocator": "pkg:pypi/bee-sdk@1.0.73"
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+          "referenceLocator": "pkg:pypi/bee-sdk@1.0.74"
         }
       ]
     },
     {
       "SPDXID": "SPDXRef-Package-MCP",
       "name": "bee-mcp",
-<<<<<<< HEAD
-      "versionInfo": "1.0.71",
-=======
-      "versionInfo": "1.0.73",
->>>>>>> 05913b1 (chore(public): export from 29a745fb7e42d77632473d49cff0ee885a1c5b04)
+      "versionInfo": "1.0.74",
       "supplier": "Organization: HEOSSI (Pte.) Ltd.",
       "downloadLocation": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.heossihq/bee-public",
       "filesAnalyzed": false,
