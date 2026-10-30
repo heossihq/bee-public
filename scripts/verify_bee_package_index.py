@@ -44,18 +44,23 @@ def registry_version(artifact: dict) -> str:
     if ecosystem == "PyPI":
         return request_json(f"https://pypi.org/pypi/{name}/json")["info"]["version"]
     if ecosystem == "MCP Registry":
-        response = request_json(
-            "https://registry.modelcontextprotocol.io/v0.1/servers"
-            f"?search={urllib.parse.quote(name, safe='')}&version=latest"
-        )
-        versions = [
-            (entry.get("server") or entry).get("version")
-            for entry in response.get("servers", [])
-            if (entry.get("server") or entry).get("name") == name
-        ]
-        if artifact["version"] not in versions:
-            raise RuntimeError(f"MCP Registry version is missing: {name}@{artifact['version']}")
-        return artifact["version"]
+        # The search endpoint only returns a lagging subset of versions, so it
+        # false-negatives on a freshly published release. Query the version
+        # directly: GET /servers/{name}/versions/{version} is authoritative
+        # (200 when it exists, 404 when it does not).
+        encoded = urllib.parse.quote(name, safe="")
+        version = artifact["version"]
+        try:
+            data = request_json(
+                "https://registry.modelcontextprotocol.io/v0.1/servers"
+                f"/{encoded}/versions/{urllib.parse.quote(version, safe='')}"
+            )
+        except OSError as exc:
+            raise RuntimeError(f"MCP Registry version is missing: {name}@{version}") from exc
+        published = (data.get("server") or {}).get("version")
+        if published != version:
+            raise RuntimeError(f"MCP Registry version is missing: {name}@{version}")
+        return version
     if ecosystem == "Open VSX":
         namespace, extension = name.split(".", maxsplit=1)
         return request_json(f"https://open-vsx.org/api/{namespace}/{extension}/latest")["version"]
