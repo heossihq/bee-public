@@ -3,10 +3,10 @@
     "register_name": "Bee post-quantum coverage register",
     "product": "Bee — The Progressive Intelligence Engine (bee.heossi.com)",
     "operator": "HEOSSI (Pte.) Ltd., Singapore, UEN 202532790K",
-    "version": "0.9.9",
-    "date": "2026-07-07",
+    "version": "0.9.10",
+    "date": "2026-11-18",
     "claim": "Bee provides post-quantum protection across its stored-data lifecycle and every transport hop between Bee clients and the Bee platform — with the exact scope published in this register, every covered mechanism continuously probed in production, and independent verification available to anyone.",
-    "predecessor_hash": "sha384:909ad8c123d003592a9e71a206776de3f4f5fee53420a5a3a0f416f10f5f28cf1a84e6a3d4cc0e3a23c864e5468bc735",
+    "predecessor_hash": "sha384:52d3e76d287fea787aaa51be7cb45c9eb080e489096b2d9efe8dbb748cb518a8648a7553656b03ff596e96670ce8366e",
     "chain_policy": "The canonical hash chain begins at 0.9.2, the first version to exist in canonical JSON form; 0.9.0 and 0.9.1 were prose drafts and are recorded in the changelog only, without hashes. ML-DSA signatures begin at the PG-8 key ceremony: every version from the ceremony onward carries a detached signature envelope; 0.9.x versions before the ceremony are hash-chained but unsigned drafts.",
     "disclosure_policy": {
       "internal_downgrade": "immediate",
@@ -260,7 +260,7 @@
       "id": "R-06",
       "flow": "Embeddings and vector index, at rest",
       "status": "covered",
-      "mechanism": "Vectors and index segments encrypted under the tenant DEK scheme (SSE-X-backed on Buzz and above).",
+      "mechanism": "Each embedding is encrypted by Bee with AES-256-GCM under a per-tenant search key. That key is a random data-encryption key wrapped by the tenant KEK through QNSI and stored in Bee's own database; only ciphertext is stored, with no plaintext vector column or index. Vectors are decrypted and ranked in application memory at query time (see R-07).",
       "key_holder": "platform_or_customer",
       "tiers": "All",
       "effective_phase": "B",
@@ -270,8 +270,8 @@
       ],
       "evidence": [
         {
-          "label": "SSE-X capability documentation",
-          "url": "https://qnsi.heossi.com/capabilities",
+          "label": "This register, published at the Bee trust page",
+          "url": "https://bee.heossi.com/trust",
           "ships": "live"
         }
       ],
@@ -937,6 +937,14 @@
       "changes": [
         "Distribution-integrity finding (independent review): 0.9.8 shipped a MANIFEST.sha384 listing six test-fixtures/* files that were never copied into the distribution — shasum -c failed (12 OK / 6 FAILED) on a set whose own gate passed, one version after fixing fails-its-own-gate. Fix: the fixtures now ship (cbom-pass/fail/unclassified, lint-clean/lint-dirty — the gate's committed regression suite), and the gate's toolchain-completeness check verifies the manifest cryptographically: every listed file must exist with a matching SHA-384, the required toolchain files must be listed, and a missing or unparseable manifest fails the gate. File existence alone is no longer accepted as completeness.",
         "Finalized into the product repository: trust/pq-register/ in the Bee monorepo is the single distribution directory (register, envelope, toolchain, fixtures, manifest); version history lives in git; the QNSP docs/bee-integration-v1..v7 drafting folders are preserved in QNSP git history and removed from the working tree. The release gate is wired into Bee's quality pipeline (trust:gate) per PG-8."
+      ]
+    },
+    {
+      "version": "0.9.10",
+      "date": "2026-11-18",
+      "changes": [
+        "R-06 corrected to the shipped mechanism: Bee encrypts each conversation embedding with AES-256-GCM under a per-tenant search key (a random data-encryption key wrapped by the tenant KEK through QNSI) and stores only ciphertext in its own database; vectors are ranked in application memory (R-07). The earlier text citing SSE-X-backed vector index encryption and the QNSI capabilities link were removed because Bee no longer stores vectors in QNSI search indexes.",
+        "predecessor_hash is the canonical SHA-384 of 0.9.9."
       ]
     }
   ]

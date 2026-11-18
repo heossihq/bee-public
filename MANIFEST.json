@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "repository": "heossihq/bee-public",
-  "generatedAt": "2026-11-18T18:49:48Z",
+  "generatedAt": "2026-11-18T19:07:47Z",
   "source": {
     "repository": "heossihq/bee",
-    "commit": "d0d1d194284399c7f9238ab1f77603fa775e37e3",
-    "contentDigest": "e701f4e153938f6d5aa514b0d037095b9a7a84963ff495749cd11bb1e29e1bd5"
+    "commit": "dc27e5167b415ef41e109ae779ba29d8b6935f44",
+    "contentDigest": "eba0d7368eaf2629d0a3979b69f4f4cfd7876a2fb659ef914e88036cc4423fff"
   },
   "packages": {
     "typescript": "1.0.121",
@@ -64,7 +64,7 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "1759da7e6b13bf36cf27401321345196e866718829031e8febe8389ff34e963a"
+      "sha256": "df52364fe099f51b7c32cef4e83151be6e09920065d02bab7e6b6a4a4965aabc"
     },
     {
       "path": "SUPPORT.md",
@@ -316,15 +316,19 @@
     },
     {
       "path": "trust/pq-register/MANIFEST.sha384",
-      "sha256": "be19dd4e38bd9e4eef9eee8732a25422b6a5803ae1b003cfc7dcd17fb8b60d4d"
+      "sha256": "2e7acaa17e1e3638ce66a572373172d0abf54337a0dc573db37ca01077737c83"
     },
     {
       "path": "trust/pq-register/bee-pq-coverage-matrix.md",
-      "sha256": "73a5c0289e9309b20275879ffdff2a9df7b4d9980162a7e68ac78c8029117f8b"
+      "sha256": "7a32515bd7c0b1942e0dc8334d899243e2ccd17e0fffbdd38b77d70ca1c69eb4"
     },
     {
       "path": "trust/pq-register/bee-pq-register.json",
-      "sha256": "a9cf5902c0f2f19977e5b9bbdc6a700833279774f3e9854e879d642ab7a87fd6"
+      "sha256": "c764a768763a4cffaf37dae24ea9a8ec1715b8f81e0bbf779e0ee4833af700e0"
+    },
+    {
+      "path": "trust/pq-register/bee-pq-register.v0.9.10.sig.json",
+      "sha256": "2f5182f7db663aeab23304d3fe8a54c4ce5adfefd13420a7835814ef4995ff07"
     },
     {
       "path": "trust/pq-register/bee-pq-register.v0.9.9.sig.json",
