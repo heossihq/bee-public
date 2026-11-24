@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "repository": "heossihq/bee-public",
-  "generatedAt": "2026-11-21T09:47:05Z",
+  "generatedAt": "2026-11-24T19:40:09Z",
   "source": {
     "repository": "heossihq/bee",
-    "commit": "1751aaedd9de5cdc4832c7660e6bda2998ec9907",
-    "contentDigest": "756b24597cad19d8c067d54a89bc10661f1179b231751881ebbd1b81deb53226"
+    "commit": "21731f784293a95694f3f9252bb1c551aee065a7",
+    "contentDigest": "41aa15918425a49ca1851eae404793c71700ea28b13d6068883418c36237e446"
   },
   "packages": {
-    "typescript": "1.0.136",
-    "python": "1.0.136",
-    "mcp": "1.0.136",
-    "vscodeExtension": "1.0.136"
+    "typescript": "1.0.156",
+    "python": "1.0.156",
+    "mcp": "1.0.156",
+    "vscodeExtension": "1.0.156"
   },
   "files": [
     {
@@ -44,11 +44,11 @@
     },
     {
       "path": "PACKAGE-INDEX.json",
-      "sha256": "e599543f76d904bd2e3d274c6141a98f8341f5c8d1d3e831db25f994257cb91c"
+      "sha256": "2ee284cb95bfc5379ce843901c9f02f3c47ea55537ff7b516eca52ad9ce39bb6"
     },
     {
       "path": "PACKAGES.md",
-      "sha256": "cc32832b8b1e0ba54cf52e2aa27354468ffb00fa1a4c661ed2a11ed42aa93e20"
+      "sha256": "4f46f54e977988efca0858b8352a345a1620084248c8d93314f82a4bfbdac8d4"
     },
     {
       "path": "README.md",
@@ -56,7 +56,7 @@
     },
     {
       "path": "SBOM.spdx.json",
-      "sha256": "9a1bbfc7956d600eec3a569dec306e5cec10b5f571f97674b4d6490c6b68cd65"
+      "sha256": "6d212b26463a933f8ccc86755d2e7566b7ede519b6156fe3a1f37569779a6c7a"
     },
     {
       "path": "SECURITY.md",
@@ -64,7 +64,7 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "d941b4d1bca9fd8b37867bed6d106d63cc0aa915f7653a0f7409df58fcd5dd79"
+      "sha256": "3e172fb4cc650c32e34226d1a5f3f67fa5712acc6bc3a65317a268ebb8bf8678"
     },
     {
       "path": "SUPPORT.md",
@@ -176,19 +176,19 @@
     },
     {
       "path": "sdks/python/README.md",
-      "sha256": "c5c30c30b44397ed9ec873f4e2180d5d31256eefeeb5ecd65f7fca878287a3de"
+      "sha256": "13a49803563b2dbd6b5425e6cb031bb54c5a156a0c89ace9b39eb88cd85a47b0"
     },
     {
       "path": "sdks/python/bee_sdk/__init__.py",
-      "sha256": "45cdbd4ab961fbb50ec0e0d07304dbe4b5433ad7e948335004f02ddc21ebc018"
+      "sha256": "43961019ffd05c65469a02917f1cefd3875b6713b767ce1e4bce53d1d764334c"
     },
     {
       "path": "sdks/python/bee_sdk/client.py",
-      "sha256": "9aefc068ae80d49ffc9562b44e36611dbb537d6d801dea33e29e25e9a8914ee7"
+      "sha256": "653b706078e5feb1ce75173038ebc352ee266c346f245cc48b42a599a8180071"
     },
     {
       "path": "sdks/python/bee_sdk/mcp.py",
-      "sha256": "1bb050b598ec267f553faa0f742a27025d7bfde596e574c9b4a1cfbf0c0d0f4d"
+      "sha256": "fef90750783591c841af1592fd8e77c8a4be7f8fb4897a7969e0a5cbef34362b"
     },
     {
       "path": "sdks/python/bee_sdk/quantum_local.py",
@@ -204,11 +204,11 @@
     },
     {
       "path": "sdks/python/mcpb/manifest.json",
-      "sha256": "eeb6d6f58878f8f04e2c960746e9ba7fb5eb348a60f515142907f6b678bc92dc"
+      "sha256": "7607dbd409e15c19651d2dd703a42ddb08a6490c5bb6ee506751516a7aac0617"
     },
     {
       "path": "sdks/python/mcpb/pyproject.toml",
-      "sha256": "682d1c76db73cfd41a587c021df92627ed95c6359a7fa0ea969a79635bb7980b"
+      "sha256": "7fb642f11957ee044c184104bf7ecfe5e0d62da6ae5eb318988ac41c017a2b0b"
     },
     {
       "path": "sdks/python/mcpb/src/server.py",
@@ -216,11 +216,11 @@
     },
     {
       "path": "sdks/python/pyproject.toml",
-      "sha256": "3c6aa53040992851b67204300639865f4e45e80ac32fc1e394f37504f7eb6993"
+      "sha256": "06edaca5b997b9975be3b76fae1fa737ad241c44b766604e425c9c4489d3fc12"
     },
     {
       "path": "sdks/python/server.json",
-      "sha256": "33363359bbc50867386d05a9afaf473b6042fb08ff4a1949c0bb517ff0ab08e1"
+      "sha256": "37be67fc30aa6daf94be7d1d07b419327e689550202e33087e5de4d5e5a00111"
     },
     {
       "path": "sdks/python/tests/test_client_domain.py",
@@ -248,7 +248,7 @@
     },
     {
       "path": "sdks/typescript/CHANGELOG.md",
-      "sha256": "357a4101c453091d5086023ed4d04368d8139b73d1376fadba9a1eb3cb2d5439"
+      "sha256": "e978e018faaabc2c65e608417998b7f1d509883fffa0562281d1e327bfa0c835"
     },
     {
       "path": "sdks/typescript/LICENSE",
@@ -260,11 +260,11 @@
     },
     {
       "path": "sdks/typescript/package-lock.json",
-      "sha256": "39c4784190ee239ac007ad9f84244d3f7c21e9d31dd4ead8c8ebedf284a9ba7b"
+      "sha256": "c9f9152420989761a5635571cf26f1c83bb5490ca9a1a465f09729a98ce6fca1"
     },
     {
       "path": "sdks/typescript/package.json",
-      "sha256": "3ac587769803715a905746f681fb4b6c5461104a4dab653112c71c31fe226512"
+      "sha256": "ad9c11e3c4fa60cabbcb370478d38733404a7de501d7e70d1a32eed7e218f393"
     },
     {
       "path": "sdks/typescript/src/client.ts",
