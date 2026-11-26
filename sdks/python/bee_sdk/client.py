@@ -123,7 +123,7 @@ class _BaseClient:
         h = {
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "User-Agent": "bee-sdk/1.0.161",
+            "User-Agent": "bee-sdk/1.0.162",
         }
         h["Authorization"] = f"Bearer {self.api_key}"
         if extra:
@@ -383,13 +383,18 @@ class Bee(_BaseClient):
         """Search your Bee documents (RAG); returns the top matching chunks.
 
         Tenant-scoped to your API key's account. Requires a rag-entitled
-        plan (the gateway 403s `rag_not_in_plan` otherwise). Added 0.5.0.
+        plan (the gateway 403s `rag_not_in_plan` otherwise) and, for API
+        keys, the `documents:read` scope (403 `insufficient_scope`).
+        Added 0.5.0.
         """
         return self._request("POST", "/documents/retrieve", {"query": query, "k": k})
 
     def documents_add(self, content: str, source: str = "sdk-upload") -> dict:
         """Add a document to your Bee knowledge base so documents_search (and
-        Bee) can use it. Counts against your plan's document limit. Added 0.5.0.
+        Bee) can use it. Counts against your plan's hosted document count and
+        storage limit (429 `rag_doc_limit_reached` / `rag_storage_limit_reached`;
+        plans with local-only retrieval get 403 `rag_cloud_storage_not_in_plan`).
+        API keys need the `documents:write` scope. Added 0.5.0.
         """
         return self._request("POST", "/documents/upload", {"content": content, "source": source})
 

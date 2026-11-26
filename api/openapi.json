@@ -553,6 +553,7 @@
       "get": {
         "operationId": "listDocuments",
         "summary": "List the caller's tenant-scoped documents",
+        "description": "API keys need the documents:read scope.",
         "responses": {
           "200": {
             "description": "Document list"
@@ -561,7 +562,38 @@
             "description": "Unauthorized"
           },
           "403": {
-            "description": "RAG is not enabled for this plan"
+            "description": "RAG is not enabled for this plan, or API key missing documents:read"
+          }
+        }
+      }
+    },
+    "/bee/documents/text": {
+      "get": {
+        "operationId": "getDocumentText",
+        "summary": "Return one stored document's full text",
+        "description": "API keys need the documents:read scope.",
+        "parameters": [
+          {
+            "name": "source",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Document text"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "RAG is not enabled for this plan, or API key missing documents:read"
+          },
+          "404": {
+            "description": "Unknown source"
           }
         }
       }
@@ -580,15 +612,25 @@
             }
           }
         },
+        "description": "API keys need the documents:write scope. Admitted against the plan's hosted document count and storage_gb byte cap; local-only plans (Bee Cell) have no hosted storage.",
         "responses": {
           "200": {
             "description": "Document accepted"
           },
+          "400": {
+            "description": "Invalid source, content or metadata"
+          },
           "401": {
             "description": "Unauthorized"
           },
+          "403": {
+            "description": "API key missing documents:write, RAG not in plan, or hosted storage not in plan (rag_cloud_storage_not_in_plan)"
+          },
           "429": {
-            "description": "Document allowance reached"
+            "description": "Document count (rag_doc_limit_reached) or storage (rag_storage_limit_reached) allowance reached"
+          },
+          "503": {
+            "description": "Stored-document usage unavailable, or contracted allocation not configured; upload not admitted"
           }
         }
       }
@@ -607,12 +649,16 @@
             }
           }
         },
+        "description": "API keys need the documents:read scope.",
         "responses": {
           "200": {
             "description": "Relevant chunks"
           },
           "401": {
             "description": "Unauthorized"
+          },
+          "403": {
+            "description": "RAG is not enabled for this plan, or API key missing documents:read"
           }
         }
       }
@@ -1144,6 +1190,32 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/bee/health": {
+      "get": {
+        "operationId": "getGatewayHealth",
+        "summary": "Gateway health for SDK callers",
+        "description": "Answered by the control plane; never wakes a model backend.",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Gateway healthy"
+          }
+        }
+      }
+    },
+    "/bee/adapters": {
+      "get": {
+        "operationId": "listDomains",
+        "summary": "Domain inventory from the Bee domain registry",
+        "description": "Served from the registry, never by waking a model backend. `active` and `loaded_count` are null: container state is not measured here.",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Domain list"
           }
         }
       }

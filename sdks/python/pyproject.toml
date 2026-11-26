@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "bee-sdk"
-version = "1.0.161"
+version = "1.0.162"
 description = "Bee: Quantum Intelligence - Specialist intelligence. Post-quantum security. Quantum computing."
 readme = "README.md"
 requires-python = ">=3.10"
