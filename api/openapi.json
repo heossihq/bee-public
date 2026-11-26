@@ -1075,7 +1075,7 @@
       "post": {
         "operationId": "a2aJsonRpc",
         "summary": "Use the A2A 1.0 JSONRPC agent interface",
-        "description": "Discovery at /.well-known/agent-card.json. Methods: SendMessage, GetTask, CancelTask, ListTasks, CreateTaskPushNotificationConfig, GetTaskPushNotificationConfig, ListTaskPushNotificationConfigs, DeleteTaskPushNotificationConfig, GetExtendedAgentCard, SendStreamingMessage, SubscribeToTask. JSON-RPC errors other than authentication return HTTP 200.",
+        "description": "Discovery at /.well-known/agent-card.json. Methods: SendMessage, GetTask, CancelTask, ListTasks, CreateTaskPushNotificationConfig, GetTaskPushNotificationConfig, ListTaskPushNotificationConfigs, DeleteTaskPushNotificationConfig, GetExtendedAgentCard, SendStreamingMessage, SubscribeToTask. The four push-notification config methods return PushNotificationNotSupportedError (-32003) because the agent card advertises pushNotifications: false. Errors use A2A 1.0 codes with google.rpc.ErrorInfo details in error.data; errors other than authentication return HTTP 200.",
         "requestBody": {
           "required": true,
           "content": {
