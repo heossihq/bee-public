@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "bee-developer-api-2026-08-04",
+    "_postman_id": "bee-developer-api-2026-11-26",
     "name": "Bee: Quantum Intelligence - Developer API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": "OpenAI-compatible developer API for Bee: Quantum Intelligence. Set bee_api_key before sending authenticated requests."
@@ -20,6 +20,10 @@
     },
     {
       "key": "quantum_jobs_cursor",
+      "value": ""
+    },
+    {
+      "key": "code_session_id",
       "value": ""
     }
   ],
@@ -190,6 +194,60 @@
           }
         ],
         "url": "{{base_url}}/bee/memories"
+      }
+    },
+    {
+      "name": "Get account usage",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bee_api_key}}"
+          }
+        ],
+        "url": "{{base_url}}/bee/usage?window=day"
+      }
+    },
+    {
+      "name": "Verify coding-session provenance",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bee_api_key}}"
+          }
+        ],
+        "url": "{{base_url}}/bee/provenance/{{code_session_id}}"
+      }
+    },
+    {
+      "name": "A2A SendMessage",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bee_api_key}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{base_url}}/a2a/v1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"SendMessage\",\"params\":{\"message\":{\"role\":\"ROLE_USER\",\"messageId\":\"postman-1\",\"parts\":[{\"text\":\"Summarize post-quantum key exchange in one sentence.\"}]}}}"
+        }
+      }
+    },
+    {
+      "name": "Control-plane health",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/health"
       }
     },
     {
