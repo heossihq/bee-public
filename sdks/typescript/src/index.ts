@@ -1,6 +1,6 @@
 /**
  * @heossihq/bee - Official TypeScript / JavaScript SDK for
- * Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine.
+ * Bee: Quantum Intelligence - Specialist intelligence. Post-quantum security. Quantum computing.
  *
  * Bee exposes an OpenAI-compatible /chat/completions surface backed by a
  * governed model ladder (Cell, Brood, Comb, Buzz, Hive, Swarm).

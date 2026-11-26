@@ -49,7 +49,7 @@ try:  # single source of truth for the advertised version
 
     SERVER_VERSION = _pkg_version("bee-sdk")
 except Exception:  # not installed (running from source) - fall back
-    SERVER_VERSION = "1.0.160"
+    SERVER_VERSION = "1.0.161"
 
 # MCP protocol revision this server speaks. We echo the client's requested
 # version when it sends one (forward-compatible negotiation); this is the
@@ -996,8 +996,8 @@ SERVER_INFO = {
     "title": "Bee: Quantum Intelligence",
     "version": SERVER_VERSION,
     "description": (
-        "Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine: a governed "
-        "multimodal intelligence platform for specialist work."
+        "Bee: Quantum Intelligence - Specialist intelligence. Post-quantum security. "
+        "Quantum computing. A governed multimodal intelligence platform for specialist work."
     ),
     "websiteUrl": "https://bee.heossi.com",
     "icons": [

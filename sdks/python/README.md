@@ -1,10 +1,10 @@
 # bee-sdk
 
-Official Python client and MCP server for **Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine**, a governed multimodal intelligence platform from [HEOSSI](https://www.heossi.com).
+Official Python client and MCP server for **Bee: Quantum Intelligence - Specialist intelligence. Post-quantum security. Quantum computing.** Bee is a governed multimodal intelligence platform from [HEOSSI](https://www.heossi.com).
 
 <!-- mcp-name: io.github.heossihq/bee-public -->
 
-SDK version: `1.0.160` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
+SDK version: `1.0.161` - includes auditable BSIS domain-intelligence metadata, 16 governed MCP tools, readiness-aware MCP resources, typed per-call/`BEE_MODEL` selection across bee-cell through bee-swarm (access follows your key's plan), and stdio plus Streamable HTTP transports.
 
 Includes a hosted **Model Context Protocol** server: `pip install bee-sdk` then
 run `bee-mcp` (stdio) to expose Bee's 16 tools to Claude Desktop, Cursor, VS
@@ -222,7 +222,7 @@ The sync client retries 429/5xx with exponential backoff (max 4 attempts).
 ## Versioning
 
 `bee-sdk` follows the Bee API surface. Breaking API changes bump the **minor**
-version pre-1.0; the SDK is currently **1.0.160** and the API is `v1`.
+version pre-1.0; the SDK is currently **1.0.161** and the API is `v1`.
 
 ## License
 

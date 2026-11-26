@@ -1,6 +1,6 @@
 # @heossihq/bee
 
-Official TypeScript / JavaScript SDK for **Bee: Quantum Intelligence - The Progressive Quantum-Native Intelligence Engine**.
+Official TypeScript / JavaScript SDK for **Bee: Quantum Intelligence - Specialist intelligence. Post-quantum security. Quantum computing.**
 
 [![npm](https://img.shields.io/npm/v/@heossihq/bee.svg)](https://www.npmjs.com/package/@heossihq/bee)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
